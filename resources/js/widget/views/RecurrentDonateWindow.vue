@@ -30,7 +30,7 @@ export default {
         email: null,
         name: sessionStorage.getItem('name'),
         phone: sessionStorage.getItem('phone'),
-        currency_code: 'UAH',
+        currency_code: '₴',
         payment_interval: 'P1M'
       }
     };

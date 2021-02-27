@@ -90,7 +90,7 @@ export default {
       model: {
         email: 'test@mail.ua',
         amount: sessionStorage.getItem('amount'),
-        currency_code: 'UAH'
+        currency_code: '₴'
       }
     };
   },

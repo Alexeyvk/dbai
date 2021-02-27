@@ -164,7 +164,7 @@ export default {
         amount_collected: 0,
         startAt: null,
         finishAt: null,
-        currency: 'UAH',
+        currency: '₴',
         has_picture_url: false,
         visual_settings: null
       },
