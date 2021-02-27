@@ -17,7 +17,9 @@ return [
         ],
         'forms' => [
             'success' => 'Успешно',
-            'data_written' => 'Данные записаны'
+            'data_written' => 'Данные записаны',
+            'error' => 'Ошибка',
+            'smthgwrong' => 'Что-то пошло не так',
         ],
     ],
 ];

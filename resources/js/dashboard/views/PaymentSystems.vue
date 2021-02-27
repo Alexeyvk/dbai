@@ -20,7 +20,7 @@
               >
                 <div>
                   <b-tabs>
-                    <b-tab title="BePaid" active>
+                    <b-tab title="Fondy" active>
                       <b-card-body>
                         <b-row>
                           <b-col md>

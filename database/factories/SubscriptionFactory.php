@@ -13,10 +13,10 @@ $factory->define(Subscription::class, function (\Faker\Generator $faker) {
     return [
         'donator_id' => factory(Donator::class)->lazy(),
         'campaign_id' => factory(Campaign::class)->lazy(),
-        'payment_gateway' => 'bePaid',
+        'payment_gateway' => 'fondy',
         'payment_gateway_subscription_id' => $faker->uuid,
         'amount' => $faker->numberBetween(1, 100) * 100, // in cents
-        'currency' => 'BYN',
+        'currency' => 'UAH',
         'payment_interval' => 'P1M',
         'cancel_reason' => null,
     ];

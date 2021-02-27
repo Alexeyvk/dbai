@@ -1,5 +1,5 @@
 <template>
-  <div>  
+  <div>
       <div class="container">
         <div class="module-donate__donateWindow">
           <div class="module-donate__card">
@@ -30,7 +30,7 @@ export default {
         email: null,
         name: sessionStorage.getItem('name'),
         phone: sessionStorage.getItem('phone'),
-        currency_code: 'BYN',
+        currency_code: 'UAH',
         payment_interval: 'P1M'
       }
     };

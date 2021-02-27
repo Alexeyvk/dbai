@@ -17,7 +17,9 @@ return [
         ],
         'forms' => [
             'success' => 'Success',
-            'data_written' => 'Data written'
+            'data_written' => 'Data written',
+            'error' => 'Error',
+            'smthgwrong' => 'Something went wrong',
         ],
     ],
 ];

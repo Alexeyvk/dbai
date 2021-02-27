@@ -49,6 +49,9 @@ return [
     'widget' => [
         'back' => 'Назад',
         'confirm' => 'Підтвердити',
-        'proceed' => 'Продовжити',
+        'proceed' => 'Сплатити',
+        'oneTime' => 'Разовий',
+        'subscribe' => 'Регулярний',
+        'email' => 'Email підтвердження',
     ],
 ];

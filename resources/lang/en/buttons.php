@@ -51,4 +51,12 @@ return [
         'confirm' => 'Confirm',
         'proceed' => 'Proceed',
     ],
+    'widget' => [
+        'back' => 'Back',
+        'confirm' => 'Confirm',
+        'proceed' => 'Proceed',
+        'oneTime' => 'Payment',
+        'subscribe' => 'Subscribe',
+        'email' => 'Confirmation email',
+    ],
 ];

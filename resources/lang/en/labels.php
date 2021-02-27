@@ -98,6 +98,7 @@ return [
                 'breadcrumb' => 'Create',
                 'name' => 'Title',
                 'image' => 'No file chosen',
+                'amount' => 'The amount of hryvnia',
             ],
             'create' => [
                 'title' => 'Create campaign',

@@ -53,6 +53,5 @@ return [
         'oneTime' => 'Плацеж',
         'subscribe' => 'Падпіска',
         'email' => 'Email для падзякі',
-
     ],
 ];

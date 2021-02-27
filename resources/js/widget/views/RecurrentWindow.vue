@@ -96,7 +96,7 @@ export default {
         phone: '',
         maxQuantSymbols: 13,
         amount: sessionStorage.getItem('amount'),
-        currency_code: 'BYN'
+        currency_code: 'UAH'
       }
     };
   },
