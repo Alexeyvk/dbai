@@ -25,7 +25,9 @@ export default {
                 },
                 "forms": {
                     "success": "Поспех",
-                    "data_written": "Дадзеныя запісаныя"
+                    "data_written": "Дадзеныя запісаныя",
+                    "error": "Праблемы",
+                    "smthgwrong": "Нешта пайшло не так"
                 }
             }
         },
@@ -279,7 +281,8 @@ export default {
                         "header": "Стварыць кампанію",
                         "breadcrumb": "Стварыць",
                         "name": "Назва",
-                        "image": "Файл не абраны"
+                        "image": "Файл не абраны",
+                        "amount": "Сума грыўняў"
                     },
                     "create": {
                         "title": "Стварыць кампанію",
@@ -480,7 +483,9 @@ export default {
                 },
                 "forms": {
                     "success": "Success",
-                    "data_written": "Data written"
+                    "data_written": "Data written",
+                    "error": "Error",
+                    "smthgwrong": "Something went wrong"
                 }
             }
         },
@@ -545,7 +550,10 @@ export default {
             "widget": {
                 "back": "Back",
                 "confirm": "Confirm",
-                "proceed": "Proceed"
+                "proceed": "Proceed",
+                "oneTime": "Payment",
+                "subscribe": "Subscribe",
+                "email": "Confirmation email"
             }
         },
         "validation": {
@@ -755,7 +763,8 @@ export default {
                         "header": "Create campaign",
                         "breadcrumb": "Create",
                         "name": "Title",
-                        "image": "No file chosen"
+                        "image": "No file chosen",
+                        "amount": "The amount of hryvnia"
                     },
                     "create": {
                         "title": "Create campaign",
@@ -929,7 +938,9 @@ export default {
                 },
                 "forms": {
                     "success": "Успешно",
-                    "data_written": "Данные записаны"
+                    "data_written": "Данные записаны",
+                    "error": "Ошибка",
+                    "smthgwrong": "Что-то пошло не так"
                 }
             }
         },
@@ -994,7 +1005,10 @@ export default {
             "widget": {
                 "back": "Назад",
                 "confirm": "Подтвердить",
-                "proceed": "Продолжить"
+                "proceed": "Оплатить",
+                "oneTime": "Разовый",
+                "subscribe": "Регулярный",
+                "email": "Email подтверждения"
             }
         },
         "validation": {
@@ -1176,7 +1190,8 @@ export default {
                         "header": "Создать кампанию",
                         "breadcrumb": "Создать",
                         "name": "Название",
-                        "image": "Файл не выбран"
+                        "image": "Файл не выбран",
+                        "amount": "Сумма гривен"
                     },
                     "create": {
                         "title": "Создать кампанию",
@@ -1350,7 +1365,9 @@ export default {
                 },
                 "forms": {
                     "success": "Успішно",
-                    "data_written": "Дані записані"
+                    "data_written": "Дані записані",
+                    "error": "Помилка",
+                    "smthgwrong": "Щось пішло не так"
                 }
             }
         },
@@ -1415,7 +1432,10 @@ export default {
             "widget": {
                 "back": "Назад",
                 "confirm": "Підтвердити",
-                "proceed": "Продовжити"
+                "proceed": "Сплатити",
+                "oneTime": "Разовий",
+                "subscribe": "Регулярний",
+                "email": "Email підтвердження"
             }
         },
         "validation": {
@@ -1601,7 +1621,8 @@ export default {
                         "header": "Створити кампанію",
                         "breadcrumb": "Створити",
                         "name": "Назва",
-                        "image": "Файл не вибран"
+                        "image": "Файл не вибран",
+                        "amount": "Сума гривень"
                     },
                     "create": {
                         "title": "Створити кампанію",
