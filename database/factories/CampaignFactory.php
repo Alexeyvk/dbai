@@ -13,7 +13,7 @@ $factory->define(Campaign::class, function (Faker\Generator $faker) {
         'description' => $faker->sentence,
         'picture_url' => $faker->imageUrl(640, 640, 'animals'),
         'target_amount' => $faker->randomDigit * 1000, // in cents,
-        'currency' => '₴',
+        'currency' => 'UAH',
         'active_status' => 1,
         'start_at' => today(),
         'finish_at' => today()->addMonths(1),

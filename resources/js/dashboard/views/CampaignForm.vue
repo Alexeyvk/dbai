@@ -355,7 +355,7 @@ export default {
         picture_url: '',
         active_status: 1,
         target_amount: 0,
-        currency: '₴',
+        currency: 'UAH',
         start_at: null,
         finish_at: null,
         visual_settings: {
