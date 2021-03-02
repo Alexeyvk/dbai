@@ -128,7 +128,7 @@ export default {
       currentPage: 1,
       perPage: 15,
       totalRows: 0,
-      pageOptions: [5, 10, 15, 25, 50],
+      pageOptions: [50, 100, 250, 500],
       searchQuery: null,
       action: null
     };

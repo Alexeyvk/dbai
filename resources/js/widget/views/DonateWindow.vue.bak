@@ -1,57 +1,136 @@
 <template>
   <div>
-      <div class="container">
-        <div class="module-donate__donateWindow">
-          <div class="module-donate__card">
-            <div id="paymentForm"></div>
-          </div>
-          <div class="donateWindow__footer">
-            <b-button :to=" '/campaigns/' + id + '/recurrent'"  class="module-donate__button-select confirm reccurent back">{{ $t('buttons.widget.back')  }}</b-button>
-          </div>
-          <p class="module-donate__version">powered by <a href="https://doika.falanster.by/" target="_blank">Doika</a></p>
+    <div
+      v-if="isBusy"
+      class="d-flex justify-content-center mb-3 spinner-wrapper"
+    >
+      <b-spinner label="Loading..."></b-spinner>
+    </div>
+    <div class="container">
+      <div class="module-donate__donateWindow">
+        <div class="module-donate__card">
+          <div id="paymentForm"></div>
         </div>
+        <div class="donateWindow__footer">
+          <b-button
+            :to="'/campaigns/' + id"
+            class="module-donate__button-select confirm back"
+          >
+            {{ $t('buttons.widget.back') }}
+          </b-button>
+        </div>
+        <p class="module-donate__version">
+          powered by
+          <a href="https://dbai.net.ua/" target="_blank">Dbai</a>
+        </p>
       </div>
+    </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
 
+/** recursive function checking the server status and redirect to partical status page
+ *
+ *  num - current number of attempts
+ *  tokenOp - current payment token
+ *  fail - fail link for redirection in case the checking process timeout
+ */
+
+function delay(num, tokenOp, fail) {
+
+    const limit = 3; // attempts to check server status of the payments
+    const postpone = 3000 // interval of checkin the server
+
+    // in the current attepmpt less the limit
+    if (num < limit) {
+
+      // set interval for repeating the checking porocess
+      setTimeout( function() {
+
+        axios( {
+            method: "post",
+            url: '/doika/doika/widget/api/bepaid-check-payment-status', // TBD - need to move to some variables...
+            data: {
+                token: tokenOp
+            }
+        }).
+        then( ({ data }) => {
+            num++;
+
+            // if success when redirect to success status page
+            if (data.checkout.status === 'successful') {
+              window.location.href = data.checkout.settings.success_url;
+            }
+
+            // else save the redirect link to the fail status page
+            fail = data.checkout.settings.fail_url;
+
+            // on more circle
+            delay(num, tokenOp, fail);
+
+        })
+      }, postpone);
+
+    } else {
+        window.location.href = fail;
+    }
+}
+
 export default {
-  name: 'ReccurentDonateWindow',
+  name: 'DonateWindow',
   props: ['id'],
   data() {
     return {
+      isBusy: false,
       campaign: [],
       redirect_url: null,
       placeholder: this.$t('buttons.widget.email'),
       model: {
+        email: 'test@mail.ua',
         amount: sessionStorage.getItem('amount'),
-        email: null,
-        name: sessionStorage.getItem('name'),
-        phone: sessionStorage.getItem('phone'),
-        currency_code: '₴',
-        payment_interval: 'P1M'
+        currency_code: '₴'
       }
     };
   },
+
+
+
+  methods: {
+    delay
+  },
+
+
   async created() {
-    this.model.email = sessionStorage.getItem('email');
+
     let formData = this.$app.objectToFormData(this.model);
     formData.append('_method', 'POST');
-    let action = this.$app.route(
-      'widget.campaigns.subscription-intends.store',
-      {
-        campaign: this.id,
-        paymentGateway: 1,
-        email: this.model.email,
-        payment_interval: 'P1M'
-      }
-    );
-    let { data } = await axios.post(action, formData);
-    this.redirect_url = data;
+    let action = this.$app.route('widget.campaigns.payment-intends.store', {
+      campaign: this.id,
+      paymentGateway: 1
+    });
 
-    var options = {
+    await axios.post(action, formData).
+    then(({ data }) => {
+        this.redirect_url = data.redirect_url;
+        this.token = data.token;
+        return this.token;
+    }).
+    catch(({error})=> {
+        //console.log(error);
+    });
+
+  const curToken = this.token;
+  //this.isBusy = true;
+
+  // set first interval for calling payments status. it need for putting the card data in the form
+  const firstLaunch = 5000;
+
+  setTimeout(function() { delay(1, curToken, ''); }, firstLaunch);
+
+
+  var options = {
       type: 'inline',
       id: 'paymentForm',
       url: this.redirect_url,
@@ -203,20 +282,43 @@ export default {
               max-width: 365px;\
               height: 186px;\
               position:relative;\
-              background: url("' +
-        parent.document.location.protocol +
-        '//' +
+              background: url("https://' +
         parent.document.location.host +
         '/doika/public/images/front-card.png"),\
-    url("' +
-        parent.document.location.protocol +
-        '//' +
+    url("https://' +
         parent.document.location.host +
         '/doika/public/images/back-card.png");\
     background-repeat: no-repeat;\
     background-position: left top, right 20px;\
   }\
   #request .verification-value label {\
+    display: none;\
+  }\
+  #request_customer_email {\
+          width: 250px !important;\
+          margin: auto !important;\
+          margin-top: 20px !important;\
+          pointer-events: auto !important;\
+          font-family: Ubuntu, sans-serif !important;\
+          font-size: 18px !important;\
+          font-weight: 500 !important;\
+          text-align: left !important;\
+          width: 250px !important;\
+          height: 50px !important;\
+          color: #191919 !important;\
+          border: none !important;\
+          -webkit-box-sizing: border-box !important;\
+          box-sizing: border-box !important;\
+          padding: 0px 5px 0px 15px !important;\
+          color: #31383e !important;\
+          -moz-appearance: textfield !important;\
+          -webkit-appearance: none !important;\
+          -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07), 0 3px 6px rgba(0, 0, 0, 0.08) !important;\
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07), 0 3px 6px rgba(0, 0, 0, 0.08) !important;\
+          -webkit-transition: all 0.3s ease 0s !important;\
+          transition: all 0.3s ease 0s !important;\
+      }\
+  .email-icon {\
     display: none;\
   }\
   .credentials {\
@@ -273,7 +375,7 @@ export default {
     margin: auto;\
   }\
   #request .submit-button {\
-      margin: 45px auto;\
+      margin: 0px auto;\
       display: flex;\
       flex-direction: column;\
       }\

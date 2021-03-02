@@ -13,12 +13,12 @@ $factory->define(Campaign::class, function (Faker\Generator $faker) {
         'description' => $faker->sentence,
         'picture_url' => $faker->imageUrl(640, 640, 'animals'),
         'target_amount' => $faker->randomDigit * 1000, // in cents,
-        'currency' => 'BYN',
+        'currency' => 'UAH',
         'active_status' => 1,
         'start_at' => today(),
         'finish_at' => today()->addMonths(1),
         'visual_settings' => [
-            'buttons' => [5, 10, 25, 50],
+            'buttons' => [50, 100, 250, 500],
             'progressBar' => true,
             'colors' => [
                 'widgetBackground' => null,

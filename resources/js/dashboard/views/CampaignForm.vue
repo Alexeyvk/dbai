@@ -355,11 +355,11 @@ export default {
         picture_url: '',
         active_status: 1,
         target_amount: 0,
-        currency: 'BYN',
+        currency: 'UAH',
         start_at: null,
         finish_at: null,
         visual_settings: {
-          buttons: [5, 10, 25, 50],
+          buttons: [50, 100, 250, 500],
           progressBar: true,
           colors: null
         }

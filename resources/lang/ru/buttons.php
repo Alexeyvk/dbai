@@ -49,6 +49,9 @@ return [
     'widget' => [
         'back' => 'Назад',
         'confirm' => 'Подтвердить',
-        'proceed' => 'Продолжить',
+        'proceed' => 'Оплатить',
+        'oneTime' => 'Разовый',
+        'subscribe' => 'Регулярный',
+        'email' => 'Email подтверждения',
     ],
 ];

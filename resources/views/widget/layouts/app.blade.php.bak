@@ -25,18 +25,8 @@
             'termsOfUse' => setting('termsOfUse'),
         ]) !!}
     </script>
-    
-    <!--
+
     <script type="text/javascript" src="https://js.bepaid.by/begateway-1-latest.min.js"></script>
-    -->
-    <script type="text/javascript" src="https://pay.fondy.eu/latest/checkout.js"></script>
-    
-    <!--
-    <script type="text/javascript" src="https://pay.fondy.eu/latest/checkout-vue/checkout.js"></script>
-    
-    <script src="https://pay.fondy.eu/static_common/v1/checkout/ipsp.js"></script>
-    -->
-    
 
     <link href="{{ asset(mix('build/css/widget/widget.css')) }}" rel="stylesheet">
 

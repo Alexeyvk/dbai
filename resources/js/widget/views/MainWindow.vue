@@ -126,7 +126,7 @@
         </p>
         <p class="module-donate__version" :style="{ color: fontColor }">
           powered by
-          <a href="https://doika.falanster.by/" target="_blank">Doika</a>
+          <a href="https://dbai.net.ua/" target="_blank">Dbai</a>
         </p>
       </div>
     </div>
@@ -164,7 +164,7 @@ export default {
         amount_collected: 0,
         startAt: null,
         finishAt: null,
-        currency: 'BYN',
+        currency: '₴',
         has_picture_url: false,
         visual_settings: null
       },

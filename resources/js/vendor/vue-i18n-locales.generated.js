@@ -1,5 +1,13 @@
 export default {
     "be": {
+        "auth": {
+            "failed": "E-mail ці пароль не існуюць.",
+            "throttle": "Занадта шмат спробаў увахода. Паўтарыце спробу праз {seconds} seconds."
+        },
+        "pagination": {
+            "previous": "&laquo; Previous",
+            "next": "Next &raquo;"
+        },
         "alerts": {
             "admin": {
                 "common": {
@@ -14,12 +22,27 @@ export default {
                 "feedback": {
                     "error": "Памылка адпраўкі!",
                     "success": "Паведамленне паспяхова адпраўлена"
+                },
+                "forms": {
+                    "success": "Поспех",
+                    "data_written": "Дадзеныя запісаныя",
+                    "error": "Праблемы",
+                    "smthgwrong": "Нешта пайшло не так"
                 }
             }
         },
-        "auth": {
-            "failed": "E-mail ці пароль не існуюць.",
-            "throttle": "Занадта шмат спробаў увахода. Паўтарыце спробу праз {seconds} seconds."
+        "passwords": {
+            "password": "Пароль павінен змяшчаць не менш за шэсць сімвалаў.",
+            "reset": "Ваш пароль быў зменены!",
+            "sent": "На ваш e-mail адпраўлена спасылка для аднаўлення пароля",
+            "token": "Гэты пароль няправільны.",
+            "user": "Карыстальніка з такім e-mail адрасам знайсці немагчыма."
+        },
+        "mails": {
+            "layout": {
+                "hello": "Вітаем!",
+                "regards": "З павагай"
+            }
         },
         "buttons": {
             "admin": {
@@ -74,6 +97,88 @@ export default {
                 "subscribe": "Падпіска",
                 "email": "Email для падзякі"
             }
+        },
+        "validation": {
+            "accepted": "The {attribute} must be accepted.",
+            "active_url": "The {attribute} is not a valid URL.",
+            "after": "The {attribute} must be a date after {date}.",
+            "after_or_equal": "The {attribute} must be a date after or equal to {date}.",
+            "alpha": "The {attribute} may only contain letters.",
+            "alpha_dash": "The {attribute} may only contain letters, numbers, and dashes.",
+            "alpha_num": "The {attribute} may only contain letters and numbers.",
+            "array": "The {attribute} must be an array.",
+            "before": "The {attribute} must be a date before {date}.",
+            "before_or_equal": "The {attribute} must be a date before or equal to {date}.",
+            "between": {
+                "numeric": "The {attribute} must be between {min} and {max}.",
+                "file": "The {attribute} must be between {min} and {max} kilobytes.",
+                "string": "The {attribute} must be between {min} and {max} characters.",
+                "array": "The {attribute} must have between {min} and {max} items."
+            },
+            "boolean": "The {attribute} field must be true or false.",
+            "confirmed": "The {attribute} confirmation does not match.",
+            "date": "The {attribute} is not a valid date.",
+            "date_format": "The {attribute} does not match the format {format}.",
+            "different": "The {attribute} and {other} must be different.",
+            "digits": "The {attribute} must be {digits} digits.",
+            "digits_between": "The {attribute} must be between {min} and {max} digits.",
+            "dimensions": "The {attribute} has invalid image dimensions.",
+            "distinct": "The {attribute} field has a duplicate value.",
+            "email": "The {attribute} must be a valid email address.",
+            "exists": "The selected {attribute} is invalid.",
+            "file": "The {attribute} must be a file.",
+            "filled": "The {attribute} field must have a value.",
+            "image": "The {attribute} must be an image.",
+            "in": "The selected {attribute} is invalid.",
+            "in_array": "The {attribute} field does not exist in {other}.",
+            "integer": "The {attribute} must be an integer.",
+            "ip": "The {attribute} must be a valid IP address.",
+            "ipv4": "The {attribute} must be a valid IPv4 address.",
+            "ipv6": "The {attribute} must be a valid IPv6 address.",
+            "json": "The {attribute} must be a valid JSON string.",
+            "max": {
+                "numeric": "The {attribute} may not be greater than {max}.",
+                "file": "The {attribute} may not be greater than {max} kilobytes.",
+                "string": "The {attribute} may not be greater than {max} characters.",
+                "array": "The {attribute} may not have more than {max} items."
+            },
+            "mimes": "The {attribute} must be a file of type: {values}.",
+            "mimetypes": "The {attribute} must be a file of type: {values}.",
+            "min": {
+                "numeric": "The {attribute} must be at least {min}.",
+                "file": "The {attribute} must be at least {min} kilobytes.",
+                "string": "The {attribute} must be at least {min} characters.",
+                "array": "The {attribute} must have at least {min} items."
+            },
+            "not_in": "The selected {attribute} is invalid.",
+            "numeric": "The {attribute} must be a number.",
+            "present": "The {attribute} field must be present.",
+            "regex": "The {attribute} format is invalid.",
+            "required": "The {attribute} field is required.",
+            "required_if": "The {attribute} field is required when {other} is {value}.",
+            "required_unless": "The {attribute} field is required unless {other} is in {values}.",
+            "required_with": "The {attribute} field is required when {values} is present.",
+            "required_with_all": "The {attribute} field is required when {values} is present.",
+            "required_without": "The {attribute} field is required when {values} is not present.",
+            "required_without_all": "The {attribute} field is required when none of {values} are present.",
+            "same": "The {attribute} and {other} must match.",
+            "size": {
+                "numeric": "The {attribute} must be {size}.",
+                "file": "The {attribute} must be {size} kilobytes.",
+                "string": "The {attribute} must be {size} characters.",
+                "array": "The {attribute} must contain {size} items."
+            },
+            "string": "The {attribute} must be a string.",
+            "timezone": "The {attribute} must be a valid zone.",
+            "unique": "The {attribute} has already been taken.",
+            "uploaded": "The {attribute} failed to upload.",
+            "url": "The {attribute} format is invalid.",
+            "custom": {
+                "attribute-name": {
+                    "rule-name": "custom-message"
+                }
+            },
+            "attributes": []
         },
         "labels": {
             "http": {
@@ -176,7 +281,8 @@ export default {
                         "header": "Стварыць кампанію",
                         "breadcrumb": "Стварыць",
                         "name": "Назва",
-                        "image": "Файл не абраны"
+                        "image": "Файл не абраны",
+                        "amount": "Сума грыўняў"
                     },
                     "create": {
                         "title": "Стварыць кампанію",
@@ -244,8 +350,10 @@ export default {
                         "header": "Злучэнне з плацежнай сістэмай",
                         "bePaidIdMarket": "Bepaid Market ID",
                         "artPayIdMarket": "Artpay Market Id",
+                        "fondyIdMarket": "Fondy Market ID",
                         "bePaidKeyMarket": "Bepaid Market key",
                         "artPayKeyMarket": "Artpay Market key",
+                        "fondyKeyMarket": "Fondy Market key",
                         "paymentInterval": "Абярыце інтэрвал рэкурэнтага плацяжу",
                         "paymentInterval1D": "1 дзень",
                         "paymentInterval1H": "1 гадзіна",
@@ -258,8 +366,10 @@ export default {
                         "placeholder": {
                             "bePaidIdMarket": "Bepaid Market ID",
                             "artPayIdMarket": "Artpay Market Id",
+                            "fondyIdMarket": "Fondy Market ID",
                             "bePaidKeyMarket": "Bepaid Market key",
                             "artPayKeyMarket": "Artpay Market key",
+                            "fondyKeyMarket": "Fondy Market key",
                             "test": "Адключыць тэставыя плацяжы",
                             "maxPayment": "Максімальны плацёж, бел.руб",
                             "minPayment": "Мінімальны плацёж, бел.руб"
@@ -345,108 +455,17 @@ export default {
                 "paymentInfo": "Я згаджаюся з правіламі",
                 "terms": "Правілы данэйта"
             }
-        },
-        "mails": {
-            "layout": {
-                "hello": "Вітаем!",
-                "regards": "З павагай"
-            }
+        }
+    },
+    "en": {
+        "auth": {
+            "failed": "These credentials do not match our records.",
+            "throttle": "Too many login attempts. Please try again in {seconds} seconds."
         },
         "pagination": {
             "previous": "&laquo; Previous",
             "next": "Next &raquo;"
         },
-        "passwords": {
-            "password": "Пароль павінен змяшчаць не менш за шэсць сімвалаў.",
-            "reset": "Ваш пароль быў зменены!",
-            "sent": "На ваш e-mail адпраўлена спасылка для аднаўлення пароля",
-            "token": "Гэты пароль няправільны.",
-            "user": "Карыстальніка з такім e-mail адрасам знайсці немагчыма."
-        },
-        "validation": {
-            "accepted": "The {attribute} must be accepted.",
-            "active_url": "The {attribute} is not a valid URL.",
-            "after": "The {attribute} must be a date after {date}.",
-            "after_or_equal": "The {attribute} must be a date after or equal to {date}.",
-            "alpha": "The {attribute} may only contain letters.",
-            "alpha_dash": "The {attribute} may only contain letters, numbers, and dashes.",
-            "alpha_num": "The {attribute} may only contain letters and numbers.",
-            "array": "The {attribute} must be an array.",
-            "before": "The {attribute} must be a date before {date}.",
-            "before_or_equal": "The {attribute} must be a date before or equal to {date}.",
-            "between": {
-                "numeric": "The {attribute} must be between {min} and {max}.",
-                "file": "The {attribute} must be between {min} and {max} kilobytes.",
-                "string": "The {attribute} must be between {min} and {max} characters.",
-                "array": "The {attribute} must have between {min} and {max} items."
-            },
-            "boolean": "The {attribute} field must be true or false.",
-            "confirmed": "The {attribute} confirmation does not match.",
-            "date": "The {attribute} is not a valid date.",
-            "date_format": "The {attribute} does not match the format {format}.",
-            "different": "The {attribute} and {other} must be different.",
-            "digits": "The {attribute} must be {digits} digits.",
-            "digits_between": "The {attribute} must be between {min} and {max} digits.",
-            "dimensions": "The {attribute} has invalid image dimensions.",
-            "distinct": "The {attribute} field has a duplicate value.",
-            "email": "The {attribute} must be a valid email address.",
-            "exists": "The selected {attribute} is invalid.",
-            "file": "The {attribute} must be a file.",
-            "filled": "The {attribute} field must have a value.",
-            "image": "The {attribute} must be an image.",
-            "in": "The selected {attribute} is invalid.",
-            "in_array": "The {attribute} field does not exist in {other}.",
-            "integer": "The {attribute} must be an integer.",
-            "ip": "The {attribute} must be a valid IP address.",
-            "ipv4": "The {attribute} must be a valid IPv4 address.",
-            "ipv6": "The {attribute} must be a valid IPv6 address.",
-            "json": "The {attribute} must be a valid JSON string.",
-            "max": {
-                "numeric": "The {attribute} may not be greater than {max}.",
-                "file": "The {attribute} may not be greater than {max} kilobytes.",
-                "string": "The {attribute} may not be greater than {max} characters.",
-                "array": "The {attribute} may not have more than {max} items."
-            },
-            "mimes": "The {attribute} must be a file of type: {values}.",
-            "mimetypes": "The {attribute} must be a file of type: {values}.",
-            "min": {
-                "numeric": "The {attribute} must be at least {min}.",
-                "file": "The {attribute} must be at least {min} kilobytes.",
-                "string": "The {attribute} must be at least {min} characters.",
-                "array": "The {attribute} must have at least {min} items."
-            },
-            "not_in": "The selected {attribute} is invalid.",
-            "numeric": "The {attribute} must be a number.",
-            "present": "The {attribute} field must be present.",
-            "regex": "The {attribute} format is invalid.",
-            "required": "The {attribute} field is required.",
-            "required_if": "The {attribute} field is required when {other} is {value}.",
-            "required_unless": "The {attribute} field is required unless {other} is in {values}.",
-            "required_with": "The {attribute} field is required when {values} is present.",
-            "required_with_all": "The {attribute} field is required when {values} is present.",
-            "required_without": "The {attribute} field is required when {values} is not present.",
-            "required_without_all": "The {attribute} field is required when none of {values} are present.",
-            "same": "The {attribute} and {other} must match.",
-            "size": {
-                "numeric": "The {attribute} must be {size}.",
-                "file": "The {attribute} must be {size} kilobytes.",
-                "string": "The {attribute} must be {size} characters.",
-                "array": "The {attribute} must contain {size} items."
-            },
-            "string": "The {attribute} must be a string.",
-            "timezone": "The {attribute} must be a valid zone.",
-            "unique": "The {attribute} has already been taken.",
-            "uploaded": "The {attribute} failed to upload.",
-            "url": "The {attribute} format is invalid.",
-            "custom": {
-                "attribute-name": {
-                    "rule-name": "custom-message"
-                }
-            },
-            "attributes": []
-        }
-    },
-    "en": {
         "alerts": {
             "admin": {
                 "common": {
@@ -461,12 +480,27 @@ export default {
                 "feedback": {
                     "error": "Sending error!",
                     "success": "Message sent successfully"
+                },
+                "forms": {
+                    "success": "Success",
+                    "data_written": "Data written",
+                    "error": "Error",
+                    "smthgwrong": "Something went wrong"
                 }
             }
         },
-        "auth": {
-            "failed": "These credentials do not match our records.",
-            "throttle": "Too many login attempts. Please try again in {seconds} seconds."
+        "passwords": {
+            "password": "Passwords must be at least eight characters and match the confirmation.",
+            "reset": "Your password has been reset!",
+            "sent": "We have e-mailed your password reset link!",
+            "token": "This password reset token is invalid.",
+            "user": "We can't find a user with that e-mail address."
+        },
+        "mails": {
+            "layout": {
+                "hello": "Hello!",
+                "regards": "Best regards"
+            }
         },
         "buttons": {
             "admin": {
@@ -516,265 +550,11 @@ export default {
             "widget": {
                 "back": "Back",
                 "confirm": "Confirm",
-                "proceed": "Proceed"
+                "proceed": "Proceed",
+                "oneTime": "Payment",
+                "subscribe": "Subscribe",
+                "email": "Confirmation email"
             }
-        },
-        "labels": {
-            "http": {
-                "404": {
-                    "title": "404",
-                    "description": ""
-                }
-            },
-            "admin": {
-                "title": "Administration",
-                "datatables": {
-                    "showPerPage": "Show",
-                    "entriesPerPage": "entries per page",
-                    "search": "Search",
-                    "actions": "Actions",
-                    "info": ""
-                },
-                "common": {
-                    "search": "Search",
-                    "footer": {
-                        "left": "Powered by",
-                        "with": "with",
-                        "by": "by"
-                    },
-                    "confirmation": "Are you sure?"
-                },
-                "newMenu": {
-                    "header": "Add",
-                    "campaign": "New campaign",
-                    "user": "New user"
-                },
-                "languageMenu": {
-                    "header": "Language",
-                    "be": "Belarussian",
-                    "ru": "Russian",
-                    "en": "English"
-                },
-                "accountMenu": {
-                    "header": "My profile",
-                    "avatar": "User avatar",
-                    "logout": "Logout"
-                },
-                "rightMenu": {
-                    "divider": {
-                        "configuration": "MODULE CONFIGURATION",
-                        "access": "ACCESS MANAGEMENT",
-                        "help": "FAQ",
-                        "feedback": "FEEDBACK"
-                    }
-                },
-                "login": {
-                    "title": "Administration",
-                    "email": "Email",
-                    "placeholder": {
-                        "email": "Email",
-                        "password": "Password"
-                    },
-                    "password": "Password",
-                    "remember": "Remember",
-                    "reset": {
-                        "link": "Forget password?",
-                        "title": "Password reset",
-                        "submit": "Send reset password link",
-                        "header": "Login"
-                    },
-                    "header": "Login"
-                },
-                "campaigns": {
-                    "title": "Campaigns",
-                    "header": "Campaigns List",
-                    "breadcrumb": "Campaigns",
-                    "name": "Title",
-                    "status": "Status",
-                    "backers": "Backers",
-                    "recurrent": "Recurrent",
-                    "average": "Average",
-                    "received": "received",
-                    "goal": "Goal",
-                    "days": "Days",
-                    "description": "Description",
-                    "image": "Title image",
-                    "uploadImage": "Upload image",
-                    "proportionsImage": "(optimal aspect ratio 2х1)",
-                    "allowedImageTypes": "Allowed types: png gif jpg jpeg.",
-                    "paymentSystem": "Payment system",
-                    "startAt": "Start at",
-                    "finishAt": "Finish at",
-                    "colors": "Colors configuration",
-                    "preview": "Campaign preview",
-                    "active": "Active",
-                    "topBanner": "Top banner",
-                    "progressBar": "Progress bar",
-                    "options": "Options",
-                    "placeholder": {
-                        "shortcode": "Shortcode",
-                        "header": "Create campaign",
-                        "breadcrumb": "Create",
-                        "name": "Title",
-                        "image": "No file chosen"
-                    },
-                    "create": {
-                        "title": "Create campaign",
-                        "header": "Create campaign",
-                        "breadcrumb": "Create"
-                    },
-                    "edit": {
-                        "title": "Edit campaign",
-                        "header": "Edit campaign",
-                        "breadcrumb": "Edit"
-                    }
-                },
-                "payments": {
-                    "title": "Payments",
-                    "header": "Payments list",
-                    "breadcrumb": "Payments",
-                    "date": "Date",
-                    "campaign": "Campaign",
-                    "amount": "Required sum",
-                    "backer": "Backer",
-                    "recurrent": "Recurrent",
-                    "status": "Payment status",
-                    "backerStatus": "Backer status",
-                    "statuses": {
-                        "success": "Success",
-                        "failed": "Failed",
-                        "error": "Error"
-                    },
-                    "show": {
-                        "title": "Show payment",
-                        "header": "Show payment",
-                        "breadcrumb": "Show"
-                    },
-                    "placeholder": {
-                        "date": "Date",
-                        "campaign": "Campaign",
-                        "amount": "Amount",
-                        "backer": "Backer",
-                        "recurrent": "Recurrent",
-                        "status": "Payment status",
-                        "backerStatus": "Backer status"
-                    }
-                },
-                "settings": {
-                    "title": "Settings",
-                    "payments": {
-                        "header": "Payment systems options",
-                        "bePaidIdMarket": "Bepaid Market Id",
-                        "artPayIdMarket": "Artpay Market Id",
-                        "bePaidKeyMarket": "Bepaid Market key",
-                        "artPayKeyMarket": "Artpay Market key",
-                        "test": "Turn off test payments",
-                        "maxPayment": "Max payment amount",
-                        "minPayment": "Min payment amount",
-                        "termsOfUse": "Terms of use",
-                        "placeholder": {
-                            "bePaidIdMarket": "Bepaid Market Id",
-                            "artPayIdMarket": "Artpay Market Id",
-                            "bePaidKeyMarket": "Bepaid Market key",
-                            "artPayKeyMarket": "Artpay Market key",
-                            "test": "Turn off test payments",
-                            "maxPayment": "Max payment amount",
-                            "minPayment": "Min payment amount"
-                        }
-                    },
-                    "layout": {
-                        "header": "Layout options"
-                    },
-                    "notifications": {
-                        "address": "Server address",
-                        "port": "Server port",
-                        "user": "Email user",
-                        "password": "Email password",
-                        "email": "Email address",
-                        "header": "Notifications options",
-                        "reccurentTemplate": "Recurrent payments email template",
-                        "singleTemplate": "Single payment email template",
-                        "placeholder": {
-                            "address": "Server address",
-                            "port": "Server port",
-                            "user": "Email user",
-                            "password": "Email password",
-                            "email": "Email address"
-                        },
-                        "title": "Notifications",
-                        "name": "Notification title",
-                        "text": "Describe the contents of the notification in a concise form",
-                        "caution": "The deleted campaign will not resume. All subscriptions will be suspended!"
-                    }
-                },
-                "help": {
-                    "title": "FAQ",
-                    "header": "Frequently asked questions"
-                },
-                "feedback": {
-                    "title": "Feedback",
-                    "header": "Feedback",
-                    "email": "Your Email",
-                    "name": "Name",
-                    "message": "Message",
-                    "placeholder": {
-                        "email": "Your Email",
-                        "name": "Name",
-                        "message": "Write your message"
-                    }
-                },
-                "users": {
-                    "title": "Users",
-                    "breadcrumb": "List",
-                    "header": "User List",
-                    "email": "Email",
-                    "name": "Name",
-                    "active": "Active",
-                    "createdAt": "Created at",
-                    "updatedAt": "Updated at",
-                    "message": "Message",
-                    "password": "Password",
-                    "passwordConfirmation": "Repeat password",
-                    "placeholder": {
-                        "email": "Email",
-                        "name": "Name",
-                        "message": "Write your message",
-                        "password": "Password"
-                    },
-                    "create": {
-                        "breadcrumb": "Create",
-                        "header": "Create user"
-                    },
-                    "edit": {
-                        "breadcrumb": "Edit",
-                        "header": "Edit user"
-                    }
-                }
-            },
-            "widget": {
-                "paymentInfo": "Terms of Use",
-                "input": "Other amount",
-                "invalidFeedback": "Please enter payment amount",
-                "received": "received",
-                "needed": "Needed"
-            }
-        },
-        "mails": {
-            "layout": {
-                "hello": "Hello!",
-                "regards": "Best regards"
-            }
-        },
-        "pagination": {
-            "previous": "&laquo; Previous",
-            "next": "Next &raquo;"
-        },
-        "passwords": {
-            "password": "Passwords must be at least eight characters and match the confirmation.",
-            "reset": "Your password has been reset!",
-            "sent": "We have e-mailed your password reset link!",
-            "token": "This password reset token is invalid.",
-            "user": "We can't find a user with that e-mail address."
         },
         "validation": {
             "accepted": "The {attribute} must be accepted.",
@@ -885,9 +665,262 @@ export default {
                 }
             },
             "attributes": []
+        },
+        "labels": {
+            "http": {
+                "404": {
+                    "title": "404",
+                    "description": ""
+                }
+            },
+            "admin": {
+                "title": "Administration",
+                "datatables": {
+                    "showPerPage": "Show",
+                    "entriesPerPage": "entries per page",
+                    "search": "Search",
+                    "actions": "Actions",
+                    "info": ""
+                },
+                "common": {
+                    "search": "Search",
+                    "footer": {
+                        "left": "Powered by",
+                        "with": "with",
+                        "by": "by"
+                    },
+                    "confirmation": "Are you sure?"
+                },
+                "newMenu": {
+                    "header": "Add",
+                    "campaign": "New campaign",
+                    "user": "New user"
+                },
+                "languageMenu": {
+                    "header": "Language",
+                    "be": "Belarussian",
+                    "ru": "Russian",
+                    "en": "English"
+                },
+                "accountMenu": {
+                    "header": "My profile",
+                    "avatar": "User avatar",
+                    "logout": "Logout"
+                },
+                "rightMenu": {
+                    "divider": {
+                        "configuration": "MODULE CONFIGURATION",
+                        "access": "ACCESS MANAGEMENT",
+                        "help": "FAQ",
+                        "feedback": "FEEDBACK"
+                    }
+                },
+                "login": {
+                    "title": "Administration",
+                    "email": "Email",
+                    "placeholder": {
+                        "email": "Email",
+                        "password": "Password"
+                    },
+                    "password": "Password",
+                    "remember": "Remember",
+                    "reset": {
+                        "link": "Forget password?",
+                        "title": "Password reset",
+                        "submit": "Send reset password link",
+                        "header": "Login"
+                    },
+                    "header": "Login"
+                },
+                "campaigns": {
+                    "title": "Campaigns",
+                    "header": "Campaigns List",
+                    "breadcrumb": "Campaigns",
+                    "name": "Title",
+                    "status": "Status",
+                    "backers": "Backers",
+                    "recurrent": "Recurrent",
+                    "average": "Average",
+                    "received": "received",
+                    "goal": "Goal",
+                    "days": "Days",
+                    "description": "Description",
+                    "image": "Title image",
+                    "uploadImage": "Upload image",
+                    "proportionsImage": "(optimal aspect ratio 2х1)",
+                    "allowedImageTypes": "Allowed types: png gif jpg jpeg.",
+                    "paymentSystem": "Payment system",
+                    "startAt": "Start at",
+                    "finishAt": "Finish at",
+                    "colors": "Colors configuration",
+                    "preview": "Campaign preview",
+                    "active": "Active",
+                    "topBanner": "Top banner",
+                    "progressBar": "Progress bar",
+                    "options": "Options",
+                    "placeholder": {
+                        "shortcode": "Shortcode",
+                        "header": "Create campaign",
+                        "breadcrumb": "Create",
+                        "name": "Title",
+                        "image": "No file chosen",
+                        "amount": "The amount of hryvnia"
+                    },
+                    "create": {
+                        "title": "Create campaign",
+                        "header": "Create campaign",
+                        "breadcrumb": "Create"
+                    },
+                    "edit": {
+                        "title": "Edit campaign",
+                        "header": "Edit campaign",
+                        "breadcrumb": "Edit"
+                    }
+                },
+                "payments": {
+                    "title": "Payments",
+                    "header": "Payments list",
+                    "breadcrumb": "Payments",
+                    "date": "Date",
+                    "campaign": "Campaign",
+                    "amount": "Required sum",
+                    "backer": "Backer",
+                    "recurrent": "Recurrent",
+                    "status": "Payment status",
+                    "backerStatus": "Backer status",
+                    "statuses": {
+                        "success": "Success",
+                        "failed": "Failed",
+                        "error": "Error"
+                    },
+                    "show": {
+                        "title": "Show payment",
+                        "header": "Show payment",
+                        "breadcrumb": "Show"
+                    },
+                    "placeholder": {
+                        "date": "Date",
+                        "campaign": "Campaign",
+                        "amount": "Amount",
+                        "backer": "Backer",
+                        "recurrent": "Recurrent",
+                        "status": "Payment status",
+                        "backerStatus": "Backer status"
+                    }
+                },
+                "settings": {
+                    "title": "Settings",
+                    "payments": {
+                        "header": "Payment systems options",
+                        "bePaidIdMarket": "Bepaid Market Id",
+                        "artPayIdMarket": "Artpay Market Id",
+                        "fondyIdMarket": "Fondy Market ID",
+                        "bePaidKeyMarket": "Bepaid Market key",
+                        "artPayKeyMarket": "Artpay Market key",
+                        "fondyKeyMarket": "Fondy Market key",
+                        "test": "Turn off test payments",
+                        "maxPayment": "Max payment amount",
+                        "minPayment": "Min payment amount",
+                        "termsOfUse": "Terms of use",
+                        "placeholder": {
+                            "bePaidIdMarket": "Bepaid Market Id",
+                            "artPayIdMarket": "Artpay Market Id",
+                            "fondyIdMarket": "Fondy Market ID",
+                            "bePaidKeyMarket": "Bepaid Market key",
+                            "artPayKeyMarket": "Artpay Market key",
+                            "fondyKeyMarket": "Fondy Market key",
+                            "test": "Turn off test payments",
+                            "maxPayment": "Max payment amount",
+                            "minPayment": "Min payment amount"
+                        }
+                    },
+                    "layout": {
+                        "header": "Layout options"
+                    },
+                    "notifications": {
+                        "address": "Server address",
+                        "port": "Server port",
+                        "user": "Email user",
+                        "password": "Email password",
+                        "email": "Email address",
+                        "header": "Notifications options",
+                        "reccurentTemplate": "Recurrent payments email template",
+                        "singleTemplate": "Single payment email template",
+                        "placeholder": {
+                            "address": "Server address",
+                            "port": "Server port",
+                            "user": "Email user",
+                            "password": "Email password",
+                            "email": "Email address"
+                        },
+                        "title": "Notifications",
+                        "name": "Notification title",
+                        "text": "Describe the contents of the notification in a concise form",
+                        "caution": "The deleted campaign will not resume. All subscriptions will be suspended!"
+                    }
+                },
+                "help": {
+                    "title": "FAQ",
+                    "header": "Frequently asked questions"
+                },
+                "feedback": {
+                    "title": "Feedback",
+                    "header": "Feedback",
+                    "email": "Your Email",
+                    "name": "Name",
+                    "message": "Message",
+                    "placeholder": {
+                        "email": "Your Email",
+                        "name": "Name",
+                        "message": "Write your message"
+                    }
+                },
+                "users": {
+                    "title": "Users",
+                    "breadcrumb": "List",
+                    "header": "User List",
+                    "email": "Email",
+                    "name": "Name",
+                    "active": "Active",
+                    "createdAt": "Created at",
+                    "updatedAt": "Updated at",
+                    "message": "Message",
+                    "password": "Password",
+                    "passwordConfirmation": "Repeat password",
+                    "placeholder": {
+                        "email": "Email",
+                        "name": "Name",
+                        "message": "Write your message",
+                        "password": "Password"
+                    },
+                    "create": {
+                        "breadcrumb": "Create",
+                        "header": "Create user"
+                    },
+                    "edit": {
+                        "breadcrumb": "Edit",
+                        "header": "Edit user"
+                    }
+                }
+            },
+            "widget": {
+                "paymentInfo": "Terms of Use",
+                "input": "Other amount",
+                "invalidFeedback": "Please enter payment amount",
+                "received": "received",
+                "needed": "Needed"
+            }
         }
     },
     "ru": {
+        "auth": {
+            "failed": "Такие e-mail и пароль не существуют.",
+            "throttle": "Слишком много попыток входа. Повторите попытку через {seconds} seconds."
+        },
+        "pagination": {
+            "previous": "&laquo; Previous",
+            "next": "Next &raquo;"
+        },
         "alerts": {
             "admin": {
                 "common": {
@@ -902,12 +935,27 @@ export default {
                 "feedback": {
                     "error": "Ошибка отправки!",
                     "success": "Сообщение успешно отправлено"
+                },
+                "forms": {
+                    "success": "Успешно",
+                    "data_written": "Данные записаны",
+                    "error": "Ошибка",
+                    "smthgwrong": "Что-то пошло не так"
                 }
             }
         },
-        "auth": {
-            "failed": "Такие e-mail и пароль не существуют.",
-            "throttle": "Слишком много попыток входа. Повторите попытку через {seconds} seconds."
+        "passwords": {
+            "password": "Пароль должен состоять минимум из шести символов и соответствовать подтвержденному.",
+            "reset": "Ваш пароль был сброшен!",
+            "sent": "Мы отправили вам ссылку для сброса пароля по электронной почте!",
+            "token": "Этот токен сброса пароля недействителен.",
+            "user": "Мы не можем найти пользователя с таким адресом электронной почты."
+        },
+        "mails": {
+            "layout": {
+                "hello": "Здравствуйте!",
+                "regards": "С уважением"
+            }
         },
         "buttons": {
             "admin": {
@@ -957,8 +1005,93 @@ export default {
             "widget": {
                 "back": "Назад",
                 "confirm": "Подтвердить",
-                "proceed": "Продолжить"
+                "proceed": "Оплатить",
+                "oneTime": "Разовый",
+                "subscribe": "Регулярный",
+                "email": "Email подтверждения"
             }
+        },
+        "validation": {
+            "accepted": "The {attribute} must be accepted.",
+            "active_url": "The {attribute} is not a valid URL.",
+            "after": "The {attribute} must be a date after {date}.",
+            "after_or_equal": "The {attribute} must be a date after or equal to {date}.",
+            "alpha": "The {attribute} may only contain letters.",
+            "alpha_dash": "The {attribute} may only contain letters, numbers, and dashes.",
+            "alpha_num": "The {attribute} may only contain letters and numbers.",
+            "array": "The {attribute} must be an array.",
+            "before": "The {attribute} must be a date before {date}.",
+            "before_or_equal": "The {attribute} must be a date before or equal to {date}.",
+            "between": {
+                "numeric": "The {attribute} must be between {min} and {max}.",
+                "file": "The {attribute} must be between {min} and {max} kilobytes.",
+                "string": "The {attribute} must be between {min} and {max} characters.",
+                "array": "The {attribute} must have between {min} and {max} items."
+            },
+            "boolean": "The {attribute} field must be true or false.",
+            "confirmed": "The {attribute} confirmation does not match.",
+            "date": "The {attribute} is not a valid date.",
+            "date_format": "The {attribute} does not match the format {format}.",
+            "different": "The {attribute} and {other} must be different.",
+            "digits": "The {attribute} must be {digits} digits.",
+            "digits_between": "The {attribute} must be between {min} and {max} digits.",
+            "dimensions": "The {attribute} has invalid image dimensions.",
+            "distinct": "The {attribute} field has a duplicate value.",
+            "email": "The {attribute} must be a valid email address.",
+            "exists": "The selected {attribute} is invalid.",
+            "file": "The {attribute} must be a file.",
+            "filled": "The {attribute} field must have a value.",
+            "image": "The {attribute} must be an image.",
+            "in": "The selected {attribute} is invalid.",
+            "in_array": "The {attribute} field does not exist in {other}.",
+            "integer": "The {attribute} must be an integer.",
+            "ip": "The {attribute} must be a valid IP address.",
+            "ipv4": "The {attribute} must be a valid IPv4 address.",
+            "ipv6": "The {attribute} must be a valid IPv6 address.",
+            "json": "The {attribute} must be a valid JSON string.",
+            "max": {
+                "numeric": "The {attribute} may not be greater than {max}.",
+                "file": "The {attribute} may not be greater than {max} kilobytes.",
+                "string": "The {attribute} may not be greater than {max} characters.",
+                "array": "The {attribute} may not have more than {max} items."
+            },
+            "mimes": "The {attribute} must be a file of type: {values}.",
+            "mimetypes": "The {attribute} must be a file of type: {values}.",
+            "min": {
+                "numeric": "The {attribute} must be at least {min}.",
+                "file": "The {attribute} must be at least {min} kilobytes.",
+                "string": "The {attribute} must be at least {min} characters.",
+                "array": "The {attribute} must have at least {min} items."
+            },
+            "not_in": "The selected {attribute} is invalid.",
+            "numeric": "The {attribute} must be a number.",
+            "present": "The {attribute} field must be present.",
+            "regex": "The {attribute} format is invalid.",
+            "required": "The {attribute} field is required.",
+            "required_if": "The {attribute} field is required when {other} is {value}.",
+            "required_unless": "The {attribute} field is required unless {other} is in {values}.",
+            "required_with": "The {attribute} field is required when {values} is present.",
+            "required_with_all": "The {attribute} field is required when {values} is present.",
+            "required_without": "The {attribute} field is required when {values} is not present.",
+            "required_without_all": "The {attribute} field is required when none of {values} are present.",
+            "same": "The {attribute} and {other} must match.",
+            "size": {
+                "numeric": "The {attribute} must be {size}.",
+                "file": "The {attribute} must be {size} kilobytes.",
+                "string": "The {attribute} must be {size} characters.",
+                "array": "The {attribute} must contain {size} items."
+            },
+            "string": "The {attribute} must be a string.",
+            "timezone": "The {attribute} must be a valid zone.",
+            "unique": "The {attribute} has already been taken.",
+            "uploaded": "The {attribute} failed to upload.",
+            "url": "The {attribute} format is invalid.",
+            "custom": {
+                "attribute-name": {
+                    "rule-name": "custom-message"
+                }
+            },
+            "attributes": []
         },
         "labels": {
             "http": {
@@ -1057,7 +1190,8 @@ export default {
                         "header": "Создать кампанию",
                         "breadcrumb": "Создать",
                         "name": "Название",
-                        "image": "Файл не выбран"
+                        "image": "Файл не выбран",
+                        "amount": "Сумма гривен"
                     },
                     "create": {
                         "title": "Создать кампанию",
@@ -1107,8 +1241,10 @@ export default {
                         "header": "Объединение с платёжной системой",
                         "bePaidIdMarket": "Bepaid Market ID",
                         "artPayIdMarket": "Artpay Market Id",
+                        "fondyIdMarket": "Fondy Market ID",
                         "bePaidKeyMarket": "Bepaid Market key",
                         "artPayKeyMarket": "Artpay Market key",
+                        "fondyKeyMarket": "Fondy Market key",
                         "test": "Отключить тестовые платежи",
                         "maxPayment": "Максимальный платеж, бел.руб",
                         "minPayment": "Минимальный платеж, бел.руб",
@@ -1116,8 +1252,10 @@ export default {
                         "placeholder": {
                             "bePaidIdMarket": "Bepaid Market ID",
                             "artPayIdMarket": "Artpay Market Id",
+                            "fondyIdMarket": "Fondy Market ID",
                             "bePaidKeyMarket": "Bepaid Market key",
                             "artPayKeyMarket": "Artpay Market key",
+                            "fondyKeyMarket": "Fondy Market key",
                             "test": "Отключить тестовые платежи",
                             "maxPayment": "Максимальный платеж, бел.руб",
                             "minPayment": "Минимальный платеж, бел.руб"
@@ -1199,23 +1337,106 @@ export default {
                 "received": "Собранная сумма",
                 "needed": "Целевая сумма"
             }
-        },
-        "mails": {
-            "layout": {
-                "hello": "Здравствуйте!",
-                "regards": "С уважением"
-            }
+        }
+    },
+    "ua": {
+        "auth": {
+            "failed": "Такі e-mail і пароль не існують.",
+            "throttle": "Занадто багато спроб входу. Спробуйте ще раз за {seconds} секунд."
         },
         "pagination": {
             "previous": "&laquo; Previous",
             "next": "Next &raquo;"
         },
+        "alerts": {
+            "admin": {
+                "common": {
+                    "search": {
+                        "noResult": "Не знайдено",
+                        "noMatchResult": "Немає співпадінь"
+                    }
+                },
+                "login": {
+                    "error": "Такі e-mail і пароль не існують."
+                },
+                "feedback": {
+                    "error": "Помилка відправки!",
+                    "success": "Повідомлення успішно відправлено"
+                },
+                "forms": {
+                    "success": "Успішно",
+                    "data_written": "Дані записані",
+                    "error": "Помилка",
+                    "smthgwrong": "Щось пішло не так"
+                }
+            }
+        },
         "passwords": {
-            "password": "Passwords must be at least six characters and match the confirmation.",
-            "reset": "Your password has been reset!",
-            "sent": "We have e-mailed your password reset link!",
-            "token": "This password reset token is invalid.",
-            "user": "We can't find a user with that e-mail address."
+            "password": "Пароль повинен складатися мінімум з шести символів і відповідати підтвердженому.",
+            "reset": "Ваш пароль був скинут!",
+            "sent": "Ми відправили вам посилання для скидання пароля по електронній пошті!",
+            "token": "Цей токен скидання пароля недійсний.",
+            "user": "Ми не можемо знайти користувача з такою адресою електронної пошти."
+        },
+        "mails": {
+            "layout": {
+                "hello": "Вітаемо!",
+                "regards": "З повагою"
+            }
+        },
+        "buttons": {
+            "admin": {
+                "common": {
+                    "delete": "Видалити",
+                    "cancel": "Скасувати",
+                    "edit": "Редагувати",
+                    "apply": "Застосувати",
+                    "enableSelected": "Включити обрані",
+                    "disableSelected": "Відключити обрані",
+                    "removeSelected": "Видалити обрані",
+                    "create": "Створити",
+                    "back": "Назад",
+                    "save": "Зберегти",
+                    "info": "Довідка",
+                    "cancellation": "Відміна",
+                    "print": "Друкувати",
+                    "email": "Надіслати e-mail"
+                },
+                "support": "Технічна підтримка",
+                "login": {
+                    "submit": "Логін"
+                },
+                "feedback": {
+                    "submit": "Відправити"
+                },
+                "users": {
+                    "create": "Створити нового користувача"
+                },
+                "campaigns": {
+                    "create": "Створити кампанію",
+                    "save": "Зберегти кампанію",
+                    "delete": "Видалити!",
+                    "uploadImage": "Завантажити зображення",
+                    "deleteImage": "Видалити зображення"
+                },
+                "notifications": {
+                    "header": {
+                        "onePay": "Для одноразових платежів",
+                        "subscriptions": "Для підписок",
+                        "mailing": "Налаштування розсилки"
+                    },
+                    "description": "Описання",
+                    "change": "Змінити повідомлення"
+                }
+            },
+            "widget": {
+                "back": "Назад",
+                "confirm": "Підтвердити",
+                "proceed": "Сплатити",
+                "oneTime": "Разовий",
+                "subscribe": "Регулярний",
+                "email": "Email підтвердження"
+            }
         },
         "validation": {
             "accepted": "The {attribute} must be accepted.",
@@ -1298,6 +1519,286 @@ export default {
                 }
             },
             "attributes": []
+        },
+        "labels": {
+            "http": {
+                "404": {
+                    "title": "404",
+                    "description": "Сталася помилка - сторінка не знайдена"
+                }
+            },
+            "emailserver": "Поштовий сервер",
+            "recurrent": "Підписка",
+            "single": "Одноразовий платіж",
+            "admin": {
+                "title": "Управління",
+                "datatables": {
+                    "showPerPage": "Показати",
+                    "entriesPerPage": "Записів на сторінці",
+                    "search": "Пошук",
+                    "actions": "Дія",
+                    "info": "Довідка"
+                },
+                "common": {
+                    "search": "Пошук",
+                    "footer": {
+                        "left": "Powered by",
+                        "with": "with",
+                        "by": "by"
+                    },
+                    "confirmation": "Ви впевнені?"
+                },
+                "newMenu": {
+                    "header": "Додати",
+                    "campaign": "Нова кампанія",
+                    "user": "Новий користувач"
+                },
+                "languageMenu": {
+                    "header": "Мова",
+                    "be": "Білоруська",
+                    "ru": "Російська",
+                    "en": "Англійська"
+                },
+                "accountMenu": {
+                    "header": "Профіль",
+                    "avatar": "Аватар користувача",
+                    "logout": "Вийти"
+                },
+                "rightMenu": {
+                    "divider": {
+                        "configuration": "Конфігурація модуля",
+                        "access": "Управління доступом",
+                        "help": "Часті питання",
+                        "feedback": "Зворотній зв'язок"
+                    }
+                },
+                "login": {
+                    "title": "Вхід у систему",
+                    "email": "E-mail адреса",
+                    "placeholder": {
+                        "email": "E-mail адреса",
+                        "password": "Пароль"
+                    },
+                    "password": "Пароль",
+                    "remember": "Запам'ятати мене",
+                    "reset": {
+                        "link": "Забули пароль?",
+                        "title": "Сброс пароля",
+                        "submit": "Надіслати посилання на скидання пароля",
+                        "header": "Логін"
+                    },
+                    "header": "Логін"
+                },
+                "campaigns": {
+                    "title": "Список кампаній",
+                    "header": "Список кампаній",
+                    "breadcrumb": "Список кампаній",
+                    "name": "Назва кампанії",
+                    "status": "Статус кампанії",
+                    "backers": "Жертвователі",
+                    "recurrent": "Підписка",
+                    "average": "Середній чек",
+                    "received": "Зібрана сума",
+                    "goal": "Цільова сума",
+                    "days": "Кількість днів до завершення",
+                    "description": "Описання",
+                    "image": "Зображення для кампанії",
+                    "uploadImage": "Загрузить изображение",
+                    "proportionsImage": "(Оптимальне співвідношення сторін 2х1)",
+                    "allowedImageTypes": "Допустимий формат: png gif jpg jpeg.",
+                    "paymentSystem": "Платіжна система",
+                    "startAt": "Дата початку",
+                    "finishAt": "Дата закінчення",
+                    "colors": "Конфігурація кольорів",
+                    "preview": "Перегляд кампанії",
+                    "active": "Діюча",
+                    "amount": "Необхідна сума",
+                    "topBanner": "Верхній банер",
+                    "progressBar": "Смуга прогресу",
+                    "options": "Параметри",
+                    "placeholder": {
+                        "shortcode": "Шорткод",
+                        "header": "Створити кампанію",
+                        "breadcrumb": "Створити",
+                        "name": "Назва",
+                        "image": "Файл не вибран",
+                        "amount": "Сума гривень"
+                    },
+                    "create": {
+                        "title": "Створити кампанію",
+                        "header": "Створити кампанію",
+                        "breadcrumb": "Створити кампанію"
+                    },
+                    "edit": {
+                        "title": "Редагувати кампанію",
+                        "header": "Редагувати кампанію",
+                        "breadcrumb": "Редагувати"
+                    }
+                },
+                "transactions": {
+                    "title": "Список пожертвувань",
+                    "header": "Список пожертвувань",
+                    "breadcrumb": "Список пожертвувань",
+                    "date": "Дата",
+                    "campaign": "Кампанія",
+                    "amount": "Сума",
+                    "backer": "Пожертвувач",
+                    "recurrent": "Підписка на кампанію",
+                    "status": "Статус оплати",
+                    "currency": "Валюта",
+                    "created_at": "Дата створення",
+                    "backerStatus": "Статус карти",
+                    "statuses": {
+                        "success": "Успішно",
+                        "failed": "Не успішно",
+                        "error": "Не завершено"
+                    },
+                    "show": {
+                        "title": "Показати платіж",
+                        "header": "Показати платіж",
+                        "breadcrumb": "Показати"
+                    },
+                    "placeholder": {
+                        "date": "Дата",
+                        "campaign": "Кампанія",
+                        "amount": "Сума",
+                        "backer": "Пожертвувач",
+                        "recurrent": "Підписка на кампанію",
+                        "status": "Статус оплати",
+                        "backerStatus": "статус карти"
+                    }
+                },
+                "paymentSystems": {
+                    "title": "Єквайрінг"
+                },
+                "layout": {
+                    "title": "Зовнішній вигляд",
+                    "font": "Колір шрифту",
+                    "background": "Колір фону",
+                    "progressBar": "Колір полоси виконання",
+                    "button": "Колір кнопок"
+                },
+                "notifications": {
+                    "title": "Повідомлення",
+                    "name": "Назва повідомлення",
+                    "text": "Коротко опишіть зміст повідомлення",
+                    "caution": "Видалена кампанія не відновиться. Усі підписки будуть призупинені!"
+                },
+                "settings": {
+                    "title": "Налаштування",
+                    "payments": {
+                        "header": "Інтеграція з платіжною системою",
+                        "bePaidIdMarket": "Bepaid Market ID",
+                        "artPayIdMarket": "Artpay Market Id",
+                        "fondyIdMarket": "Fondy Market ID",
+                        "bePaidKeyMarket": "Bepaid Market key",
+                        "artPayKeyMarket": "Artpay Market key",
+                        "fondyKeyMarket": "Fondy Market key",
+                        "paymentInterval": "Виберіть періодичний інтервал оплати",
+                        "paymentInterval1D": "1 день",
+                        "paymentInterval1H": "1 час",
+                        "paymentInterval1M": "1 місяць",
+                        "paymentInterval1Y": "1 рік",
+                        "test": "Відключити тестові платежі",
+                        "maxPayment": "Максимальний платіж, гривень",
+                        "minPayment": "Мінімальний платіж, гривень",
+                        "termsOfUse": "Текст умов сервісу збору пожертвувань",
+                        "placeholder": {
+                            "bePaidIdMarket": "Bepaid Market ID",
+                            "artPayIdMarket": "Artpay Market Id",
+                            "fondyIdMarket": "Fondy Market ID",
+                            "bePaidKeyMarket": "Bepaid Market key",
+                            "artPayKeyMarket": "Artpay Market key",
+                            "fondyKeyMarket": "Fondy Market key",
+                            "test": "Відключити тестові платежі",
+                            "maxPayment": "Максимальний платіж, гривень",
+                            "minPayment": "Мінімальний платіж, гривень"
+                        }
+                    },
+                    "layout": {
+                        "header": "Параметри макета"
+                    },
+                    "notifications": {
+                        "address": "Адреса сервера",
+                        "port": "Порт сервера",
+                        "user": "Користувач електронної пошти",
+                        "password": "Пароль",
+                        "email": "Адреса електронної пошти",
+                        "header": "Налаштування повідомлень",
+                        "reccurentTemplate": "Шаблон електронного листа для регулярних платежів",
+                        "singleTemplate": "Подяка за зроблений платіж на пошту",
+                        "placeholder": {
+                            "address": "Адреса сервера",
+                            "port": "Порт сервера",
+                            "user": "Користувач електронної пошти",
+                            "password": "Пароль",
+                            "email": "Адреса електронної пошти"
+                        },
+                        "title": "Повідомлення",
+                        "name": "Назва повідомлення",
+                        "text": "Опишіть лаконічно зміст повідомлення",
+                        "caution": "Віддалена кампанія не відновиться. Все підписки будуть припинені!"
+                    }
+                },
+                "help": {
+                    "title": "Часті питання",
+                    "header": "Як користуватися модулем"
+                },
+                "feedback": {
+                    "title": "Зворотній зв'язок",
+                    "header": "Зв'язок",
+                    "email": "Ваш Email",
+                    "name": "Ім'я",
+                    "message": "Повідомлення",
+                    "placeholder": {
+                        "email": "Ваш Email",
+                        "name": "Ім'я",
+                        "message": "Напишіть Ваше звернення"
+                    }
+                },
+                "users": {
+                    "title": "Список користувачів",
+                    "breadcrumb": "Список користувачів",
+                    "header": "Список користувачів",
+                    "email": "E-mail",
+                    "name": "Ім'я",
+                    "active": "Діюча",
+                    "createdAt": "Дата створення",
+                    "updatedAt": "дата оновлення",
+                    "message": "Повідомлення",
+                    "password": "Пароль",
+                    "passwordConfirmation": "Повторіть пароль",
+                    "placeholder": {
+                        "email": "E-mail",
+                        "name": "Ім'я",
+                        "message": "Напишіть Ваше звернення",
+                        "password": "Пароль",
+                        "passwordConfirmation": "Повторіть пароль"
+                    },
+                    "create": {
+                        "breadcrumb": "Створити",
+                        "header": "Створити користувача"
+                    },
+                    "edit": {
+                        "breadcrumb": "Редагувати",
+                        "header": "Редагувати користувача"
+                    }
+                }
+            },
+            "widget": {
+                "title": "Дані користувача",
+                "name": "Ім'я Прізвище",
+                "email": "email",
+                "phone": "Телефон",
+                "mask": "(+380)",
+                "input": "Iнша сума",
+                "invalidFeedback": "Введіть суму платежу",
+                "received": "Зібрана сума",
+                "needed": "Цільова сума",
+                "thanks": "Щиро дякуємо за допомогу!",
+                "paymentInfo": "Я згоден з правилами",
+                "terms": "Правила данейта"
+            }
         }
     }
 }

@@ -72,8 +72,8 @@
           </b-tab>
           <b-tab :title="$t('buttons.admin.notifications.header.mailing')">
             <h2>
-              Спіс опцый для рассылкі паведамленняў (магчыма выкарыстаць трэці
-              сэрвіс sendgrid?)
+              Список опцій надсилання повідомлень (можна використовувати сервис
+               sendgrid?)
             </h2>
           </b-tab>
         </b-tabs>
@@ -115,14 +115,14 @@ export default {
           data
         )
         .then(({ data }) => {
-          window.swal('Поспех', 'Запіс абноўлены', 'success', {
+          window.swal(this.$t('alerts.admin.forms.success'), this.$t('alerts.admin.forms.data_written'), 'success', {
             timer: 2000,
             buttons: false
           });
         })
         // needs to be developed
         .catch(({ response }) => {
-          window.swal('Праблемы', 'Нешта пайшло не так', 'error', {
+          window.swal(this.$t('alerts.admin.forms.error'), this.$t('alerts.admin.forms.smthgwrong'), 'error', {
             timer: 2000,
             buttons: false
           });
