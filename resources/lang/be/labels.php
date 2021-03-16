@@ -24,6 +24,7 @@ return [
         'common' => [
             'search' => 'Пошук',
             'footer' => [
+                'EU' => 'Гэта дадатак было створана і падтрымліваецца пры фінансавай падтрымцы Еўрапейскага Саюза.',
                 'left' => 'Powered by',
                 'with' => 'with',
                 'by' => 'by',
@@ -104,6 +105,7 @@ return [
                 'breadcrumb' => 'Стварыць',
                 'name' => 'Назва',
                 'image' => 'Файл не абраны',
+                'amount' => 'Сума грыўняў',
             ],
             'create' => [
                 'title' => 'Стварыць кампанію',
@@ -171,8 +173,10 @@ return [
                 'header' => 'Злучэнне з плацежнай сістэмай',
                 'bePaidIdMarket' => 'Bepaid Market ID',
                 'artPayIdMarket' => 'Artpay Market Id',
+                'fondyIdMarket' => 'Fondy Market ID',
                 'bePaidKeyMarket' => 'Bepaid Market key',
                 'artPayKeyMarket' => 'Artpay Market key',
+                'fondyKeyMarket' => 'Fondy Market key',
                 'paymentInterval' => 'Абярыце інтэрвал рэкурэнтага плацяжу',
                 'paymentInterval1D' => '1 дзень',
                 'paymentInterval1H' => '1 гадзіна',
@@ -185,8 +189,10 @@ return [
                 'placeholder' => [
                     'bePaidIdMarket' => 'Bepaid Market ID',
                     'artPayIdMarket' => 'Artpay Market Id',
+                    'fondyIdMarket' => 'Fondy Market ID',
                     'bePaidKeyMarket' => 'Bepaid Market key',
                     'artPayKeyMarket' => 'Artpay Market key',
+                    'fondyKeyMarket' => 'Fondy Market key',
                     'test' => 'Адключыць тэставыя плацяжы',
                     'maxPayment' => 'Максімальны плацёж, бел.руб',
                     'minPayment' => 'Мінімальны плацёж, бел.руб',

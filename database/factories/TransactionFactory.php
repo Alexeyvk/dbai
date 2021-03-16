@@ -17,7 +17,7 @@ $factory->define(Transaction::class, function (\Faker\Generator $faker) {
         'payment_gateway' => 'bePaid',
         'payment_gateway_transaction_id' => $faker->uuid,
         'amount' => $faker->randomDigitNotNull * 100, // in cents
-        'currency' => 'BYN',
+        'currency' => 'UAH',
         'status' => 'successful',
         'status_message' => 'The operation was successfully processed.',
     ];

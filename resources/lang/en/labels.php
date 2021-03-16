@@ -19,6 +19,7 @@ return [
         'common' => [
             'search' => 'Search',
             'footer' => [
+                'EU' => 'This application has been created and maintained with the financial assistance of the European Union.',
                 'left' => 'Powered by',
                 'with' => 'with',
                 'by' => 'by',
@@ -98,6 +99,7 @@ return [
                 'breadcrumb' => 'Create',
                 'name' => 'Title',
                 'image' => 'No file chosen',
+                'amount' => 'The amount of hryvnia',
             ],
             'create' => [
                 'title' => 'Create campaign',
@@ -147,8 +149,10 @@ return [
                 'header' => 'Payment systems options',
                 'bePaidIdMarket' => 'Bepaid Market Id',
                 'artPayIdMarket' => 'Artpay Market Id',
+                'fondyIdMarket' => 'Fondy Market ID',
                 'bePaidKeyMarket' => 'Bepaid Market key',
                 'artPayKeyMarket' => 'Artpay Market key',
+                'fondyKeyMarket' => 'Fondy Market key',
                 'test' => 'Turn off test payments',
                 'maxPayment' => 'Max payment amount',
                 'minPayment' => 'Min payment amount',
@@ -156,8 +160,10 @@ return [
                 'placeholder' => [
                     'bePaidIdMarket' => 'Bepaid Market Id',
                     'artPayIdMarket' => 'Artpay Market Id',
+                    'fondyIdMarket' => 'Fondy Market ID',
                     'bePaidKeyMarket' => 'Bepaid Market key',
                     'artPayKeyMarket' => 'Artpay Market key',
+                    'fondyKeyMarket' => 'Fondy Market key',
                     'test' => 'Turn off test payments',
                     'maxPayment' => 'Max payment amount',
                     'minPayment' => 'Min payment amount',

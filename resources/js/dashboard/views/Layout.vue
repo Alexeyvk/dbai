@@ -1094,10 +1094,10 @@ export default {
   data() {
     return {
       fakeCampaign: {
-        title: 'Прыклад кампаніі',
-        description: 'Тэкст кампаніі',
-        button_values: [2, 4, 6, 8],
-        currency: 'BYN',
+        title: 'Приклад компанії',//TODO: i18
+        description: 'Текст компанії',//TODO: i18
+        button_values: [50, 100, 250, 500],
+        currency: '₴',
         target_amount: 1000,
         amount_collected: 10,
         picture_url: '/doika/public/images/logo_campaign.png'

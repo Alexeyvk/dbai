@@ -5,7 +5,8 @@
     "keywords": [
         "vue",
         "laravel",
-        "bePaid"
+        "bePaid",
+        "fondy"
     ],
     "license": "GPL-3.0-or-later",
     "require": {

@@ -34,7 +34,7 @@ class BePaidPaymentWebhookHandlerTest extends TestCase
             'payment_gateway' => 'bePaid',
             'payment_gateway_transaction_id' => '12019567-c74ce49914',
             'amount' => 500,
-            'currency' => 'BYN',
+            'currency' => 'UAH',
             'status' => Transaction::STATUS_SUCCESSFUL,
         ]);
         $this->assertDatabaseHas('donators', [

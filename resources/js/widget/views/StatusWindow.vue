@@ -24,7 +24,7 @@
       <div class="module-donate-status__footer">
         <p class="module-donate__version">
           powered by
-          <a href="https://doika.falanster.by/" target="_blank">Doika</a>
+          <a href="https://dbai.net.ua/" target="_blank">Dbai</a>
         </p>
       </div>
     </div>

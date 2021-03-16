@@ -19,6 +19,7 @@ return [
         'common' => [
             'search' => 'Поиск',
             'footer' => [
+                'EU' => 'Это приложение было создано и поддерживается при финансовой поддержке Европейского Союза.',
                 'left' => 'Powered by',
                 'with' => 'with',
                 'by' => 'by',
@@ -98,6 +99,7 @@ return [
                 'breadcrumb' => 'Создать',
                 'name' => 'Название',
                 'image' => 'Файл не выбран',
+                'amount' => 'Сумма гривен',
             ],
             'create' => [
                 'title' => 'Создать кампанию',
@@ -147,8 +149,10 @@ return [
                 'header' => 'Объединение с платёжной системой',
                 'bePaidIdMarket' => 'Bepaid Market ID',
                 'artPayIdMarket' => 'Artpay Market Id',
+                'fondyIdMarket' => 'Fondy Market ID',
                 'bePaidKeyMarket' => 'Bepaid Market key',
                 'artPayKeyMarket' => 'Artpay Market key',
+                'fondyKeyMarket' => 'Fondy Market key',
                 'test' => 'Отключить тестовые платежи',
                 'maxPayment' => 'Максимальный платеж, бел.руб',
                 'minPayment' => 'Минимальный платеж, бел.руб',
@@ -156,8 +160,10 @@ return [
                 'placeholder' => [
                     'bePaidIdMarket' => 'Bepaid Market ID',
                     'artPayIdMarket' => 'Artpay Market Id',
+                    'fondyIdMarket' => 'Fondy Market ID',
                     'bePaidKeyMarket' => 'Bepaid Market key',
                     'artPayKeyMarket' => 'Artpay Market key',
+                    'fondyKeyMarket' => 'Fondy Market key',
                     'test' => 'Отключить тестовые платежи',
                     'maxPayment' => 'Максимальный платеж, бел.руб',
                     'minPayment' => 'Минимальный платеж, бел.руб',

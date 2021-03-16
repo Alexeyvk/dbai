@@ -2,12 +2,20 @@
   <Footer>
     <strong>
       {{ $t('labels.admin.common.footer.left') }}
-      <a href="/" target="_blank">{{ name }}</a>
-      . v{{ appVersion }}
+      <a href="http://doika.falanster.by/" target="_blank">{{ name }}</a>
+       v{{ appVersion }}
     </strong>
     <span class="ml-auto">
       <template v-if="editorName !== ''">
         <template v-if="editorSiteUrl !== ''">
+          {{ $t('labels.admin.common.footer.EU') }}
+          <a class="navbar-brand" href="https://europa.eu/" target="_blank">
+            <img
+              class="navbar-brand-full"
+              :src="require('@/dashboard/EU')"
+              height="60"
+              alt="EU-logo">
+          </a>
           {{ $t('labels.admin.common.footer.with') }}
           <FontAwesomeIcon
             class="heart-icon"
@@ -23,8 +31,7 @@
       <FontAwesomeIcon class="heart-icon" :icon="heartIcon"></FontAwesomeIcon>
       {{ $t('labels.admin.common.footer.by') }}
       <a href="https://falanster.by/" target="_blank"
-        ><strong>Falanster</strong></a
-      >
+        ><strong>Falanster</strong></a>
     </span>
   </Footer>
 </template>
