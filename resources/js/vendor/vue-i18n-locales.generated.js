@@ -202,6 +202,7 @@ export default {
                 "common": {
                     "search": "Пошук",
                     "footer": {
+                        "EU": "Гэта дадатак было створана і падтрымліваецца пры фінансавай падтрымцы Еўрапейскага Саюза.",
                         "left": "Powered by",
                         "with": "with",
                         "by": "by"
@@ -685,6 +686,7 @@ export default {
                 "common": {
                     "search": "Search",
                     "footer": {
+                        "EU": "This application has been created and maintained with the financial assistance of the European Union.",
                         "left": "Powered by",
                         "with": "with",
                         "by": "by"
@@ -1112,6 +1114,7 @@ export default {
                 "common": {
                     "search": "Поиск",
                     "footer": {
+                        "EU": "Это приложение было создано и поддерживается при финансовой поддержке Европейского Союза.",
                         "left": "Powered by",
                         "with": "with",
                         "by": "by"
@@ -1542,6 +1545,7 @@ export default {
                 "common": {
                     "search": "Пошук",
                     "footer": {
+                        "EU": "Ця програма створена і підтримується за фінансової підтримки Європейського Союзу.",
                         "left": "Powered by",
                         "with": "with",
                         "by": "by"
@@ -1595,13 +1599,13 @@ export default {
                     "breadcrumb": "Список кампаній",
                     "name": "Назва кампанії",
                     "status": "Статус кампанії",
-                    "backers": "Жертвователі",
+                    "backers": "Благодійники",
                     "recurrent": "Підписка",
                     "average": "Середній чек",
                     "received": "Зібрана сума",
                     "goal": "Цільова сума",
                     "days": "Кількість днів до завершення",
-                    "description": "Описання",
+                    "description": "Опис",
                     "image": "Зображення для кампанії",
                     "uploadImage": "Загрузить изображение",
                     "proportionsImage": "(Оптимальне співвідношення сторін 2х1)",
@@ -1636,13 +1640,13 @@ export default {
                     }
                 },
                 "transactions": {
-                    "title": "Список пожертвувань",
-                    "header": "Список пожертвувань",
-                    "breadcrumb": "Список пожертвувань",
+                    "title": "Список пожертв",
+                    "header": "Список пожертв",
+                    "breadcrumb": "Список пожертв",
                     "date": "Дата",
                     "campaign": "Кампанія",
                     "amount": "Сума",
-                    "backer": "Пожертвувач",
+                    "backer": "Благодійник",
                     "recurrent": "Підписка на кампанію",
                     "status": "Статус оплати",
                     "currency": "Валюта",
@@ -1669,7 +1673,7 @@ export default {
                     }
                 },
                 "paymentSystems": {
-                    "title": "Єквайрінг"
+                    "title": "Еквайрінг"
                 },
                 "layout": {
                     "title": "Зовнішній вигляд",
@@ -1702,7 +1706,7 @@ export default {
                         "test": "Відключити тестові платежі",
                         "maxPayment": "Максимальний платіж, гривень",
                         "minPayment": "Мінімальний платіж, гривень",
-                        "termsOfUse": "Текст умов сервісу збору пожертвувань",
+                        "termsOfUse": "Текст умов сервісу збору пожертв",
                         "placeholder": {
                             "bePaidIdMarket": "Bepaid Market ID",
                             "artPayIdMarket": "Artpay Market Id",
