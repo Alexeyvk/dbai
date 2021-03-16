@@ -19,6 +19,7 @@ return [
         'common' => [
             'search' => 'Search',
             'footer' => [
+                'EU' => 'This application has been created and maintained with the financial assistance of the European Union.',
                 'left' => 'Powered by',
                 'with' => 'with',
                 'by' => 'by',
